@@ -1,0 +1,85 @@
+
+h1{
+  margin: 0;/*step2*/
+  color: rgb(255,255,255);/*step3*/
+}
+
+p{
+  margin: 0;/*step2*/
+  font-size: 20px;/*step2*/
+}
+
+a{
+  font-size: 20px;/*step2*/
+}
+
+body{
+  margin: 0;/*step2*/
+}
+header{
+  margin-bottom: 20px;/*step3*/
+  background-color: rgb(244,79,79);/*step3*/
+  text-align: center;/*step3*/
+}
+main{
+  margin: 10,10;/*step4-2*/
+}
+
+#parent{/*ここで横になる*/
+  display: flex;/*step4-2*/
+  justify-content:space-around ;/*step4-2*/
+}
+
+.contents{
+  border: solid 3px rgb(238,204,204);/*step4-2*/
+  flex-basis: 25%;/*step4-2*/
+  padding: 10px 15px;/*step4-2*/
+  margin: 20px 0;/*step4-2*/
+  text-align: center;/*step4-2*/
+}
+.contents img{
+  margin: 10px 0;/*step4-2*/
+  width: 70%/*step4-2*/
+}
+h2{
+  font-size: 25px;
+  border-bottom:dotted 3px rgb(239,122,122);
+}
+h2::before{/*↑とまとめられないか*/
+  content: "●";
+  color:rgb(239,111,139)
+
+}
+
+.contents p:nth-of-type(2)::first-letter {/*組み合わせ方がいまいちわからん------------------------*/
+  font-weight: bold;/*step4-2*/
+  color:rgb(97, 206, 249);/*step4-2*/
+}
+/* .contents p:nth-of-type(2){
+  p::first-letter{
+   font-weight: bold;
+   color:rgb(97,206,249);
+  }
+}  */
+footer{/*step5-2 以下3つはまとめられないか-----------------------------------*/
+  background-color: rgb(244, 79, 79);
+  text-align: center;/*step5-2 footer a{にすると反応しないーーーー-------ーーー*/
+}
+a:visited {/*step5-2*/
+  color:rgb(193, 234, 251);
+}
+a:hover{/*step5-2*/
+  color:rgb(245, 178, 168)
+}
+
+@media screen and (max-width: 768px){
+   h2{
+    font-size: 30px;
+   }
+   p{
+    font-size: 25px;
+   }
+   #parent{
+    display: block;
+   }
+}
